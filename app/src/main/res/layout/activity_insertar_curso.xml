@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".InsertarCurso">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="25dp">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Insertar Curso"
+            android:textSize="35sp"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/edtCodigo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Código"
+            android:layout_marginTop="15dp"/>
+
+        <EditText
+            android:id="@+id/edtNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Nombre"
+            android:layout_marginTop="15dp" />
+
+        <EditText
+            android:id="@+id/edtDescripción"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Descripción"
+            android:layout_marginTop="15dp" />
+
+        <EditText
+            android:id="@+id/edtDuracion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberSigned"
+            android:hint="Duración"
+            android:layout_marginTop="15dp"/>
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:id="@+id/imgMostrarImage"
+            android:layout_width="match_parent"
+            android:layout_height="204dp"
+            tools:srcCompat="@mipmap/ic_camera"
+            android:layout_marginTop="15dp" />
+
+        <Button
+            android:id="@+id/btnCargarImagen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seleciona una imagen"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/plomo"/>
+
+        <Button
+            android:id="@+id/btnRegistrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registrar"
+            android:layout_marginTop="30dp"/>
+    </LinearLayout>
+</LinearLayout>
