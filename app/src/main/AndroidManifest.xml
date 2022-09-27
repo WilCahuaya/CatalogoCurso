@@ -11,15 +11,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Catalogo_WCQ">
-        <activity android:name=".Catalogo"></activity>
-        <activity
-            android:name=".InsertarCurso"
+        <activity android:name=".Catalogo"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".InsertarCurso"
+            android:exported="true">
+
         </activity>
         <activity
             android:name=".MainActivity"
